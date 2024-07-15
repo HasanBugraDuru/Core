@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
         Move();
         Jump();
         FlipPlayer();
+        PinnControl();
     }
     private void Move()
     {
