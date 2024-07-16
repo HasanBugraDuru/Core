@@ -41,18 +41,34 @@ public class LightControl : MonoBehaviour
     }
     void Update()
     {
-    
+        Debug.Log(-90 - (360 - _lightsource.pointLightOuterAngle) / 2);
     }
     bool IsShining()
     {
-        if (angle > 90 - _lightsource.pointLightOuterAngle / 2 && angle < 90 + _lightsource.pointLightOuterAngle / 2)
+        if (_lightsource.pointLightOuterAngle < 180 && angle > 90 - _lightsource.pointLightOuterAngle / 2 && angle < 90 + _lightsource.pointLightOuterAngle / 2)
         {
             Debug.Log("inside light");
             return true;
         }
-        else
-            return false;
-        
+
+        else if (_lightsource.pointLightOuterAngle > 180 && angle > 90 - _lightsource.pointLightOuterAngle / 2 && angle < 90 + _lightsource.pointLightOuterAngle / 2)
+        {
+            return true;
+            Debug.Log("Bigger than 180 but still topside");
+        }
+            
+        else if (_lightsource.pointLightOuterAngle > 180 && angle > -90 + (360 - _lightsource.pointLightOuterAngle) / 2) {
+            return true;
+            Debug.Log("minus right side ");
+        }
+            
+        else if (_lightsource.pointLightOuterAngle > 180 && angle < -90 - (360 - _lightsource.pointLightOuterAngle) / 2)
+        {
+            return true;
+            Debug.Log("minus right side");
+        }
+            
+        else return false;
     }
     
 }
