@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject PinnPanel;
 
     private GameObject Light;
+    private GameObject Npc;
 
 
     private void Awake()
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
         FlipPlayer();
         PinnControl();
         ManageLight();
+        DialogWithNpc();
     }
     private void Move()
     {
@@ -85,6 +88,10 @@ public class PlayerController : MonoBehaviour
         {
             Light  = other.gameObject;
         }
+        if (other.CompareTag("NPC"))
+        {
+            Npc = other.gameObject;
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -95,6 +102,10 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Light"))
         {
             Light = null;
+        }
+        if (other.CompareTag("NPC"))
+        {
+            Npc = null;
         }
     }
     private void PinnControl()
@@ -107,16 +118,31 @@ public class PlayerController : MonoBehaviour
     }
     private void ManageLight()
     {
+        
         if (Light!=null)
         {
-            if (Input.GetKeyDown(KeyCode.X))
+            Light2D light2D = Light.GetComponent<Light2D>();
+            if (Input.GetKey(KeyCode.X))
             {
-                Light.GetComponent<Light2D>().pointLightOuterRadius += 1;
+                light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, light2D.pointLightOuterRadius + 3, 1f*Time.deltaTime) ;
             }
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Input.GetKey(KeyCode.Z) && light2D.pointLightOuterRadius >0)
             {
-                Light.GetComponent<Light2D>().pointLightOuterRadius -= 1;
+                light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, light2D.pointLightOuterRadius - 3, 1f * Time.deltaTime);
             }
         }
     }
+
+    private void DialogWithNpc()
+    {
+        if(Npc!=null) 
+        {
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                Dialogue npcDialog = Npc.GetComponent<Dialogue>();
+                npcDialog.StartDialogue();
+            }
+        }
+    }
+
 }

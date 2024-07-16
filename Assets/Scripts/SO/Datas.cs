@@ -9,4 +9,5 @@ public class Datas : ScriptableObject
     public float MusicValue;
     public float SoundValue;
     public string password;
+    public bool EscOpened,isPaused;
 }
