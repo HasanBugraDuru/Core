@@ -17,6 +17,9 @@ public class PinnNumber : MonoBehaviour
     }
     public void DellText() 
     { 
-        pinnText.text = pinnText.text.Substring(0,pinnText.text.Length-1);
+        if(pinnText.text.Length > 0) 
+        {
+            pinnText.text = pinnText.text.Substring(0, pinnText.text.Length - 1);
+        }
     }
 }
