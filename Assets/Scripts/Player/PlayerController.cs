@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
@@ -17,6 +19,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask floor;
     [SerializeField] GameObject PinnPanel;
 
+    private GameObject Light;
+    private GameObject Npc;
+
 
     private void Awake()
     {
@@ -28,6 +33,8 @@ public class PlayerController : MonoBehaviour
         Jump();
         FlipPlayer();
         PinnControl();
+        ManageLight();
+        DialogWithNpc();
     }
     private void Move()
     {
@@ -77,12 +84,28 @@ public class PlayerController : MonoBehaviour
         {
             pinnOn = true;
         }
+        if (other.CompareTag("Light"))
+        {
+            Light  = other.gameObject;
+        }
+        if (other.CompareTag("NPC"))
+        {
+            Npc = other.gameObject;
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Pinn"))
         {
             pinnOn = false;
+        }
+        if (other.CompareTag("Light"))
+        {
+            Light = null;
+        }
+        if (other.CompareTag("NPC"))
+        {
+            Npc = null;
         }
     }
     private void PinnControl()
@@ -93,4 +116,33 @@ public class PlayerController : MonoBehaviour
             PinnPanel.SetActive(true);
         }
     }
+    private void ManageLight()
+    {
+        
+        if (Light!=null)
+        {
+            Light2D light2D = Light.GetComponent<Light2D>();
+            if (Input.GetKey(KeyCode.X))
+            {
+                light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, light2D.pointLightOuterRadius + 3, 1f*Time.deltaTime) ;
+            }
+            if (Input.GetKey(KeyCode.Z) && light2D.pointLightOuterRadius >0)
+            {
+                light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, light2D.pointLightOuterRadius - 3, 1f * Time.deltaTime);
+            }
+        }
+    }
+
+    private void DialogWithNpc()
+    {
+        if(Npc!=null) 
+        {
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                Dialogue npcDialog = Npc.GetComponent<Dialogue>();
+                npcDialog.StartDialogue();
+            }
+        }
+    }
+
 }

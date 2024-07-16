@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pinn
+  - Light
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -44,6 +46,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Misc
+    uniqueID: 9210421
     locked: 0
   - name: Player
     uniqueID: 3432978401
