@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
@@ -17,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask floor;
     [SerializeField] GameObject PinnPanel;
 
+    private GameObject Light;
+
 
     private void Awake()
     {
@@ -28,6 +31,7 @@ public class PlayerController : MonoBehaviour
         Jump();
         FlipPlayer();
         PinnControl();
+        ManageLight();
     }
     private void Move()
     {
@@ -77,12 +81,20 @@ public class PlayerController : MonoBehaviour
         {
             pinnOn = true;
         }
+        if (other.CompareTag("Light"))
+        {
+            Light  = other.gameObject;
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Pinn"))
         {
             pinnOn = false;
+        }
+        if (other.CompareTag("Light"))
+        {
+            Light = null;
         }
     }
     private void PinnControl()
@@ -91,6 +103,20 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Open");
             PinnPanel.SetActive(true);
+        }
+    }
+    private void ManageLight()
+    {
+        if (Light!=null)
+        {
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                Light.GetComponent<Light2D>().pointLightOuterRadius += 1;
+            }
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                Light.GetComponent<Light2D>().pointLightOuterRadius -= 1;
+            }
         }
     }
 }
