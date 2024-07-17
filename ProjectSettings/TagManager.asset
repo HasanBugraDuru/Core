@@ -7,6 +7,10 @@ TagManager:
   - Pinn
   - Light
   - NPC
+  - Key
+  - Gun
+  - Heart
+  - Ammo
   layers:
   - Default
   - TransparentFX
