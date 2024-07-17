@@ -36,6 +36,7 @@ public class LightControl : MonoBehaviour
             RC.collider.GetComponent<ILightable>().GetLight();
 
         }
+
          }
 
     }

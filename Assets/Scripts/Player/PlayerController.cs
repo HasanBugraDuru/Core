@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask floor;
     [SerializeField] GameObject PinnPanel;
 
+    public bool canMove;
+
     private GameObject Light;
     private GameObject Npc;
 
@@ -26,11 +28,16 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        canMove = true;
     }
     private void Update()
     {
-        Move();
-        Jump();
+
+        if (canMove)
+        {
+            Move();
+            Jump();
+        }
         FlipPlayer();
         PinnControl();
         ManageLight();

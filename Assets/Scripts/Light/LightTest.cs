@@ -20,4 +20,9 @@ public class LightTest : MonoBehaviour,ILightable
     {
         Debug.Log("Shining");
     }
+
+    public void LoseLight()
+    {
+        Debug.Log("Not Shining");
+    }
 }

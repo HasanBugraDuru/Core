@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ILightable 
+public interface Iinteractable
 {
-    public void GetLight();
-
-   
-    
+    public void Interact();
 }
