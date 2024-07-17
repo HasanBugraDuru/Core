@@ -18,7 +18,6 @@ public class Dialogue : MonoBehaviour
     private void Awake()
     {
        // Voice = GetComponent<AudioSource>();
-        textComponent.text = string.Empty;
     }
     private void Update()
     {
@@ -39,7 +38,8 @@ public class Dialogue : MonoBehaviour
     }
     public void StartDialogue()
     {
-        dialoguBox.SetActive(false);
+        dialoguBox.SetActive(true);
+        textComponent.text = string.Empty;
         image.sprite= gameObject.GetComponent<SpriteRenderer>().sprite;
         index = 0;
         StartCoroutine(Typeline());
