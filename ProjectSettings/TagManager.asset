@@ -11,6 +11,9 @@ TagManager:
   - Gun
   - Heart
   - Ammo
+  - Zombie
+  - Undefined
+  - Bullet
   layers:
   - Default
   - TransparentFX

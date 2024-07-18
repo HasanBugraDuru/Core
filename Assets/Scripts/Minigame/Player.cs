@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] GameObject bulletposition;
     [SerializeField] TextMeshProUGUI ammoText,keyText,time;
-    [SerializeField] Image Heart1, Heart2, Heart3;
+    [SerializeField] private Image Heart1, Heart2, Heart3;
     [SerializeField] Sprite fullHeart, emptyHeart;
 
     bool canShoot;
@@ -99,6 +99,12 @@ public class Player : MonoBehaviour
             keyText.text = key.ToString();
             other.gameObject.SetActive(false);
         }
+    }
+    public void GetBite(Vector2 hit)
+    {
+        Health--;
+        rb.velocity = hit * -50f ;
+        ControlHealth();
     }
     private void ControlHealth()
     {
