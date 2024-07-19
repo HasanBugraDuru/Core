@@ -10,4 +10,6 @@ public class Datas : ScriptableObject
     public float SoundValue;
     public string password;
     public bool EscOpened,isPaused, MusicOn,SoundOn;
+
+    public Transform playerTransform;
 }

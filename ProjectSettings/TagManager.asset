@@ -14,6 +14,7 @@ TagManager:
   - Zombie
   - Undefined
   - Bullet
+  - ArcadeBox
   layers:
   - Default
   - TransparentFX
@@ -51,8 +52,14 @@ TagManager:
   - name: BackGround
     uniqueID: 2528916913
     locked: 0
+  - name: Floor
+    uniqueID: 3704326233
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Bullet
+    uniqueID: 2116906229
     locked: 0
   - name: Misc
     uniqueID: 9210421
