@@ -11,6 +11,7 @@ public class PlayerInteract : MonoBehaviour
         if (collision.GetComponent<Iinteractable>() != null)
         {
             interactableObject = collision.gameObject;
+            Debug.Log("interactable object is" + interactableObject.name);
         }
     }
 
@@ -27,6 +28,7 @@ public class PlayerInteract : MonoBehaviour
         {
             interactableObject.GetComponent<Iinteractable>().Interact();
         }
+        
     }
 
 }
