@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
@@ -18,8 +20,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform floorControlPoint;
     [SerializeField] LayerMask floor;
     [SerializeField] GameObject PinnPanel;
+    [SerializeField] Datas datas;
 
-    public bool canMove;
+    [SerializeField] GameObject Sing;
+    [SerializeField] TextMeshProUGUI SingPanelText;
+
+    public bool canMove,ArcadeBox;
 
     private GameObject Light;
     private GameObject Npc;
@@ -27,8 +33,16 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        if(datas.playerTransform != null)
+        {
+            this.transform.position = datas.playerTransform.position;
+            this.transform.rotation = datas.playerTransform.rotation;
+
+        }
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         canMove = true;
+        ArcadeBox = false;
     }
     private void Update()
     {
@@ -49,7 +63,7 @@ public class PlayerController : MonoBehaviour
       float v = Input.GetAxis("Horizontal");
       float movevelo = velo * v;
       rb.velocity = new Vector2(movevelo, rb.velocity.y);
-      //animator.SetFloat("velocity",Mathf.Abs(rb.velocity.x));
+      animator.SetFloat("Velo_x", Mathf.Abs(rb.velocity.x));
     }
 
     private void Jump()
@@ -57,11 +71,11 @@ public class PlayerController : MonoBehaviour
         onFloor = Physics2D.OverlapCircle(floorControlPoint.position, .2f, floor);
         if (onFloor)
         {
-        //animator.SetBool("onFloor", true);
+        animator.SetBool("OnFloor", true);
         }
         else 
         { 
-        //animator.SetBool("OnFloor", false);
+        animator.SetBool("OnFloor", false);
         }
 
         if (Input.GetButtonDown("Jump"))
@@ -91,14 +105,27 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Pinn"))
         {
             pinnOn = true;
+            Sing.SetActive(true);
+            SingPanelText.text = "E";
         }
         if (other.CompareTag("Light"))
         {
             Light  = other.gameObject;
+            Sing.SetActive(true);
+            SingPanelText.text = "X";
         }
         if (other.CompareTag("NPC"))
         {
             Npc = other.gameObject;
+            Sing.SetActive(true);
+            SingPanelText.text = "C";
+        }
+        if (other.CompareTag("ArcadeBox"))
+        {
+            Npc = other.gameObject;
+            Sing.SetActive(true);
+            ArcadeBox = true;
+            SingPanelText.text = "F";
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -106,14 +133,23 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Pinn"))
         {
             pinnOn = false;
+            Sing.SetActive(false);
         }
         if (other.CompareTag("Light"))
         {
             Light = null;
+            Sing.SetActive(false);
         }
         if (other.CompareTag("NPC"))
         {
             Npc = null;
+            Sing.SetActive(false);
+        }
+        if (other.CompareTag("ArcadeBox"))
+        {
+            Npc = other.gameObject;
+            ArcadeBox = true;
+            Sing.SetActive(false);
         }
     }
     private void PinnControl()
@@ -148,8 +184,14 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.C))
             {
                 Dialogue npcDialog = Npc.GetComponent<Dialogue>();
+                npcDialog.dialoguactive = true;
                 npcDialog.StartDialogue();
             }
+        }
+        if(ArcadeBox & Input.GetKeyDown(KeyCode.F))
+        {
+            datas.playerTransform = this.transform;
+            SceneManager.LoadScene("MiniGame");
         }
     }
 }

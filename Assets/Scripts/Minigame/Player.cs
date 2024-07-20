@@ -2,13 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    
     [SerializeField] float rotationSpeed = 500f;
     [SerializeField] GameObject bulletprefab;
     [SerializeField] Transform firelocation;
@@ -18,6 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Image Heart1, Heart2, Heart3;
     [SerializeField] Sprite fullHeart, emptyHeart;
 
+    private AudioSource shootshound;
     bool canShoot;
     private int ammo, key, Health;
     private float speedX,speedY;
@@ -28,6 +27,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        shootshound = GetComponent<AudioSource>();
         canShoot = false;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -69,6 +69,8 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) & ammo>0 & canShoot)
         {
+           // if(!shootshound.isPlaying) 
+            shootshound.Play();
             ammo--;
             ammoText.text = ammo.ToString();
             Instantiate(bulletprefab,firelocation.position,transform.rotation);
@@ -85,6 +87,7 @@ public class Player : MonoBehaviour
         if (other.CompareTag("Heart"))
         {
             if (Health <= 2) Health++;
+            ControlHealth();
             other.gameObject.SetActive(false);
         }
         if (other.CompareTag("Ammo"))
@@ -102,9 +105,15 @@ public class Player : MonoBehaviour
     }
     public void GetBite(Vector2 hit)
     {
-        Health--;
-        rb.velocity = hit * -50f ;
-        ControlHealth();
+        if(Health>0)
+        {
+            Health--;
+            rb.velocity = hit * -50f;
+            ControlHealth();
+        }else if(Health==0) 
+        {
+
+        }
     }
     private void ControlHealth()
     {

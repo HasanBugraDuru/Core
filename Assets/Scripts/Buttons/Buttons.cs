@@ -26,7 +26,11 @@ public class Buttons : MonoBehaviour
    {
         SceneManager.LoadScene("Credits");
    }
-  
+   
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     private void Start()
     {
         image = GetComponent<Image>();

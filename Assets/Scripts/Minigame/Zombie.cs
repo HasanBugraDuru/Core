@@ -5,9 +5,14 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
-    public Transform player; // Oyuncunun Transform'u
-    public float speed = 2f; // Zombinin hýzý
-
+    private AudioSource zombieDie;
+    public Transform player; 
+    public float speed = 2f;
+    [SerializeField] GameObject ammo, heart;
+    private void Awake()
+    {
+        zombieDie = GetComponent<AudioSource>();
+    }
     void Update()
     {
         Case();
@@ -17,12 +22,12 @@ public class Zombie : MonoBehaviour
     {
         if (player != null )
         {
-            // Oyuncuya doðru yönelme
+            //rotation
             Vector3 direction = (player.position - transform.position).normalized;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
-            // Oyuncuya doðru hareket etme
+           //move
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
     }
@@ -39,6 +44,16 @@ public class Zombie : MonoBehaviour
             player.gameObject.GetComponent<Player>().GetBite(hitDirection);
         }
 
-        if(other.CompareTag("Bullet")) Die();
+        if (other.CompareTag("Bullet")) 
+        {
+            Destroy(other.gameObject);
+            zombieDie.Play();
+            DropItem();
+            Die();
+        }
+    }
+    private void DropItem()
+    {
+        Instantiate(ammo,transform.position,transform.rotation);    
     }
 }
