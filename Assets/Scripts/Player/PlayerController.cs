@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     AudioSource sound;
 
-    private bool onFloor,pinnOn;
+    public bool onFloor,pinnOn;
 
     [SerializeField] float velo;
     [SerializeField] float JumpPower;
@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
             Move();
             Jump();
         }
+        else rb.velocity = new Vector2(0, 0);
         FlipPlayer();
         PinnControl();
         ManageLight();

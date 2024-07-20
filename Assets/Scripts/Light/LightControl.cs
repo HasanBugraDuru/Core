@@ -19,7 +19,7 @@ public class LightControl : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-         if (collision.GetComponent<ILightable>()!=null )
+         if (collision.GetComponent<ILightAble>()!=null )
          {
         Vector3 dir = collision.transform.position - transform.position;
         dir = transform.InverseTransformDirection(dir);
@@ -30,10 +30,10 @@ public class LightControl : MonoBehaviour
             Debug.DrawLine(transform.position, RC.point);
             Debug.Log(RC.collider.name + "hit by light raycast");
 
-            if (RC.collider.GetComponent<ILightable>() != null&&IsShining()==true     )
+            if (RC.collider.GetComponent<ILightAble>() != null&&IsShining()==true     )
         { 
 
-            RC.collider.GetComponent<ILightable>().GetLight();
+            RC.collider.GetComponent<ILightAble>().GetLight();
 
         }
 
