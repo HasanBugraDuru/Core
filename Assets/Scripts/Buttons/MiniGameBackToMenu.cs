@@ -1,12 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BackToMenu : MonoBehaviour
+public class MiniGameBackToMenu : MonoBehaviour
 {
-    [SerializeField] Datas datas;
+    [SerializeField] Minigamedatas datas;
     [SerializeField] private GameObject Esc;
     private void Update()
     {
@@ -14,16 +13,19 @@ public class BackToMenu : MonoBehaviour
     }
     public void ShowEsc()
     {
-        datas.EscOpened = !datas.EscOpened;
-        if (datas.EscOpened)
+        if (!datas.DeadMenuOpend) 
         {
-            TogglePause();
-            Esc.SetActive(true);
-        }
-        else
-        {
-            TogglePause();
-            Esc.SetActive(false);
+            datas.EscOpened = !datas.EscOpened;
+            if (datas.EscOpened)
+            {
+                TogglePause();
+                Esc.SetActive(true);
+            }
+            else
+            {
+                TogglePause();
+                Esc.SetActive(false);
+            }
         }
     }
     public void CloseEsc()
@@ -50,5 +52,19 @@ public class BackToMenu : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+    }
+    public void ResetLevel()
+    {
+        datas.isPaused = false;
+        datas.EscOpened = false;
+        Time.timeScale = 1;
+        datas.DeadMenuOpend = false;
+        SceneManager.LoadScene("MiniGame");
+    }
+    public void LeaveAcrade() 
+    {
+        Time.timeScale = 1;
+        datas.DeadMenuOpend = false;
+        SceneManager.LoadScene("Game");
     }
 }

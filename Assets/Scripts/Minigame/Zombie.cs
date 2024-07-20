@@ -5,14 +5,10 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
-    private AudioSource zombieDie;
+ 
     public Transform player; 
     public float speed = 2f;
     [SerializeField] GameObject ammo, heart;
-    private void Awake()
-    {
-        zombieDie = GetComponent<AudioSource>();
-    }
     void Update()
     {
         Case();
@@ -47,13 +43,22 @@ public class Zombie : MonoBehaviour
         if (other.CompareTag("Bullet")) 
         {
             Destroy(other.gameObject);
-            zombieDie.Play();
             DropItem();
             Die();
         }
     }
     private void DropItem()
     {
-        Instantiate(ammo,transform.position,transform.rotation);    
+        
+        float randomValue = Random.Range(0f, 1f);
+
+        if (randomValue > 0f & randomValue < 0.3f)
+        {
+            Instantiate(ammo, transform.position, transform.rotation);
+        }
+        else if(randomValue > 0.3f & randomValue < 0.5f)
+        {
+            Instantiate(heart, transform.position, transform.rotation);
+        }
     }
 }
