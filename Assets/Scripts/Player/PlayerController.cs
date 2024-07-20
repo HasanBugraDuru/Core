@@ -183,6 +183,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.C))
             {
                 Dialogue npcDialog = Npc.GetComponent<Dialogue>();
+                npcDialog.dialoguactive = true;
                 npcDialog.StartDialogue();
             }
         }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 82f696c3cf14df54d8519d57e38fc4c5
+guid: 0e415d7876c7fb04bb5c9e05ff27ff39
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wall_tile_0
+      name: doors_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
+        x: 319
+        y: 998
+        width: 433
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 929230009924b2e45951700cd89b7037
-      internalID: 2145015672
+      spriteID: c01b99e7e5bcaae44ac8592ff3b26e99
+      internalID: 340055129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_tile_1
+      name: doors_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 1048
+        y: 998
+        width: 443
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2aff617933d49f949a0e57334e891012
-      internalID: 365832776
+      spriteID: 27e6a0a7099e8e54d9a3b9d1209fc726
+      internalID: -2144656831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_tile_2
+      name: doors_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 159
+        y: 198
+        width: 652
+        height: 563
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 855ed642e9f2fbf49b9c64953e3c80b2
-      internalID: -848060088
+      spriteID: 75da7aedc50245342afba7b6961104b4
+      internalID: -1554891076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_tile_3
+      name: doors_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 998
+        y: 198
+        width: 654
+        height: 563
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,113 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85ce33fab8848984dab149f0a8f6bb9e
-      internalID: 532721592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wall_tile_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fd9cf3704bb9904d9549e0a603da78a
-      internalID: -1801906004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wall_tile_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 095d13fc6ff876543a5ef31c37952bc4
-      internalID: -286391398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wall_tile_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28547e7326b240348b2914228020a223
-      internalID: 1413129896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wall_tile_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75d0a1c87ae40f94ea96620435597a77
-      internalID: -143840615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wall_tile_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbd01607d14ca9b4789f49aa9e2b93b4
-      internalID: 1558592123
+      spriteID: 1bbd78ee3f49b644ab673fb56b8aaf4d
+      internalID: -153845590
       vertices: []
       indices: 
       edges: []
@@ -322,15 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wall_tile_0: 2145015672
-      Wall_tile_1: 365832776
-      Wall_tile_2: -848060088
-      Wall_tile_3: 532721592
-      Wall_tile_4: -1801906004
-      Wall_tile_5: -286391398
-      Wall_tile_6: 1413129896
-      Wall_tile_7: -143840615
-      Wall_tile_8: 1558592123
+      doors_0: 340055129
+      doors_1: -2144656831
+      doors_2: -1554891076
+      doors_3: -153845590
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

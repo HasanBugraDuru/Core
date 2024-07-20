@@ -11,17 +11,19 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private float textspeed;
     [SerializeField] private Image image;
     [SerializeField] private GameObject dialoguBox;
+    public bool dialoguactive;
  
     Animator animator;
     //private AudioSource Voice;
     private int index;
     private void Awake()
     {
+        dialoguactive = false;
        // Voice = GetComponent<AudioSource>();
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) & dialoguactive)
         {
             if(textComponent.text == lines[index]) 
             {
