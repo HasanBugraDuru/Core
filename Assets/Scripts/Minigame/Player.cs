@@ -15,7 +15,9 @@ public class Player : MonoBehaviour
     [SerializeField] TextMeshProUGUI ammoText,keyText,time;
     [SerializeField] private Image Heart1, Heart2, Heart3;
     [SerializeField] Sprite fullHeart, emptyHeart;
+    [SerializeField] GameObject DeadMenu;
 
+    [SerializeField] Minigamedatas minigamedatas;
     private AudioSource shootshound;
     bool canShoot;
     private int ammo, key, Health;
@@ -24,9 +26,13 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rb;
     Animator animator;
-
+    private void ResetDataBase()
+    {
+        minigamedatas.canSpawn = false;
+    }
     private void Awake()
     {
+        ResetDataBase();
         shootshound = GetComponent<AudioSource>();
         canShoot = false;
         animator = GetComponent<Animator>();
@@ -82,6 +88,7 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("gun",true);
             canShoot = true;
+            minigamedatas.canSpawn = true;
             other.gameObject.SetActive(false);
         }
         if (other.CompareTag("Heart"))
@@ -137,6 +144,9 @@ public class Player : MonoBehaviour
         }
         else if(Health==0) 
         {
+            Time.timeScale = 0;
+            DeadMenu.SetActive(true);
+            minigamedatas.DeadMenuOpend = true;
             Heart1.sprite = emptyHeart;
             Heart2.sprite = emptyHeart;
             Heart3.sprite = emptyHeart;

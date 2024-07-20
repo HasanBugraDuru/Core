@@ -13,6 +13,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Transform _player;
     [SerializeField] public SpawnerMods spawnMod = SpawnerMods.Fixed;
 
+    public Minigamedatas minigamedatas;
+
     [SerializeField] private int enemyCount = 10;
     [SerializeField] private float delayBtwWaves = 1f;
 
@@ -40,7 +42,7 @@ public class Spawner : MonoBehaviour
         {
             _spawntimer= GetSpawnDelay(); 
 
-            if(_enemiesSpawned < enemyCount) 
+            if(_enemiesSpawned < enemyCount & minigamedatas.canSpawn) 
             {
                 _enemiesSpawned++;
                 SpawnEnemy();
