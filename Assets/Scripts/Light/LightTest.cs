@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightTest : MonoBehaviour,IActivatable
+public class LightTest : MonoBehaviour,ILightAble
 {
     // Start is called before the first frame update
     void Start()
