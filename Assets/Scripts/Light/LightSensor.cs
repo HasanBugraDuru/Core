@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightSensor : MonoBehaviour,ILightable
+public class LightSensor : MonoBehaviour,ILightAble
 {
     public GameObject[] gameObjects;
     public float _lightTimer;

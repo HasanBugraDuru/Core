@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
    [SerializeField] GameObject interactableObject;
+   [SerializeField] PlayerController controller;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,6 +14,10 @@ public class PlayerInteract : MonoBehaviour
             interactableObject = collision.gameObject;
             Debug.Log("interactable object is" + interactableObject.name);
         }
+    }
+    private void Start()
+    {
+        controller = GetComponent<PlayerController>();
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -24,7 +29,7 @@ public class PlayerInteract : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && interactableObject != null)
+        if (Input.GetKeyDown(KeyCode.E) && interactableObject != null&&controller.onFloor==true)
         {
             interactableObject.GetComponent<Iinteractable>().Interact();
         }
