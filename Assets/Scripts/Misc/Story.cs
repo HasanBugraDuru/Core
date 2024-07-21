@@ -1,39 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Dialogue : MonoBehaviour
+public class Story : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textComponent;
     [SerializeField] private string[] lines;
     [SerializeField] private float textspeed;
-    [SerializeField] private Image image;
-    [SerializeField] private GameObject dialoguBox;
-    public bool dialoguactive;
- 
-    Animator animator;
-    //private AudioSource Voice;
+    [SerializeField] Datas datas;
+
     private int index;
     private void Awake()
     {
         index = 0;
-        dialoguactive = false;
-       // Voice = GetComponent<AudioSource>();
+        StartDialogue();
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) & dialoguactive)
+        if (Input.GetMouseButtonDown(0))
         {
-            if(textComponent.text == lines[index]) 
+            if (textComponent.text == lines[index])
             {
-                //Voice.UnPause();
                 NextLine();
             }
             else
             {
-                //Voice.Stop();
                 StopAllCoroutines();
                 textComponent.text = lines[index];
             }
@@ -41,9 +34,7 @@ public class Dialogue : MonoBehaviour
     }
     public void StartDialogue()
     {
-        dialoguBox.SetActive(true);
         textComponent.text = string.Empty;
-        image.sprite= gameObject.GetComponent<SpriteRenderer>().sprite;
         index = 0;
         StartCoroutine(Typeline());
     }
@@ -57,7 +48,7 @@ public class Dialogue : MonoBehaviour
     }
     private void NextLine()
     {
-        if(index < lines.Length - 1)
+        if (index < lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
@@ -65,8 +56,8 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-          dialoguactive = false;
-          dialoguBox.SetActive(false);
+            datas.Storypassed = true;
+            SceneManager.LoadScene("Game");
         }
     }
 }

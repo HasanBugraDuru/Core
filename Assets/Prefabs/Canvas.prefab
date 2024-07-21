@@ -3499,7 +3499,7 @@ GameObject:
   - component: {fileID: 84938390498046070}
   - component: {fileID: 7450006483016219118}
   - component: {fileID: 5014763102257388118}
-  - component: {fileID: 2661884796839528780}
+  - component: {fileID: 1963468762229519430}
   m_Layer: 5
   m_Name: Music
   m_TagString: Untagged
@@ -3608,7 +3608,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2661884796839528780}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: MusicButton
         m_Mode: 1
@@ -3620,7 +3620,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2661884796839528780
+--- !u!114 &1963468762229519430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3629,15 +3629,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 5066897392544634803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3ff87b2cace9e489a4762afccdd615, type: 3}
+  m_Script: {fileID: 11500000, guid: b5a519e07806a2e429bf3ebdb99982d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ismusic: 1
+  isaudio: 0
+  music: {fileID: 0}
   datas: {fileID: 11400000, guid: 5ba3ce7fde979e84db0beb7d20e7ac86, type: 2}
   MusicOn: {fileID: 1616057517, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
   MusicOff: {fileID: 407175464, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
   SoundOn: {fileID: -1857836627, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
   SoundOff: {fileID: 170201107, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
-  music: {fileID: 0}
 --- !u!1 &5804654679921109210
 GameObject:
   m_ObjectHideFlags: 0
@@ -5646,6 +5648,7 @@ GameObject:
   - component: {fileID: 3724145823590103839}
   - component: {fileID: 7484090833709304311}
   - component: {fileID: 1497628211568755333}
+  - component: {fileID: 4172343404396438400}
   - component: {fileID: 6838358477382580219}
   m_Layer: 5
   m_Name: Sound
@@ -5767,6 +5770,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4172343404396438400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877720855940947995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a519e07806a2e429bf3ebdb99982d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ismusic: 0
+  isaudio: 1
+  music: {fileID: 0}
+  datas: {fileID: 11400000, guid: 5ba3ce7fde979e84db0beb7d20e7ac86, type: 2}
+  MusicOn: {fileID: 1616057517, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
+  MusicOff: {fileID: 407175464, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
+  SoundOn: {fileID: -1857836627, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
+  SoundOff: {fileID: 170201107, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
 --- !u!114 &6838358477382580219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5779,9 +5802,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e3ff87b2cace9e489a4762afccdd615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  datas: {fileID: 11400000, guid: 5ba3ce7fde979e84db0beb7d20e7ac86, type: 2}
-  MusicOn: {fileID: 1616057517, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
-  MusicOff: {fileID: 407175464, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
-  SoundOn: {fileID: -1857836627, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
-  SoundOff: {fileID: 170201107, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
-  music: {fileID: 0}

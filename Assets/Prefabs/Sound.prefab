@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3772121766100051474}
   - component: {fileID: 6929705923182990586}
   - component: {fileID: 1386883061523079048}
-  - component: {fileID: 6417960328655891190}
+  - component: {fileID: 1601539284947933476}
   m_Layer: 5
   m_Name: Sound
   m_TagString: Untagged
@@ -121,8 +121,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6417960328655891190}
-        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
+      - m_Target: {fileID: 1601539284947933476}
+        m_TargetAssemblyTypeName: MusicAndAudio, Assembly-CSharp
         m_MethodName: SoundButton
         m_Mode: 1
         m_Arguments:
@@ -133,7 +133,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6417960328655891190
+--- !u!114 &1601539284947933476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,12 +142,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8990194424907693334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3ff87b2cace9e489a4762afccdd615, type: 3}
+  m_Script: {fileID: 11500000, guid: b5a519e07806a2e429bf3ebdb99982d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ismusic: 0
+  isaudio: 1
+  music: {fileID: 0}
   datas: {fileID: 11400000, guid: 5ba3ce7fde979e84db0beb7d20e7ac86, type: 2}
   MusicOn: {fileID: 1616057517, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
   MusicOff: {fileID: 407175464, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
   SoundOn: {fileID: -1857836627, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
   SoundOff: {fileID: 170201107, guid: 1ac23d13a7532904cb9da4ff63133466, type: 3}
-  music: {fileID: 0}

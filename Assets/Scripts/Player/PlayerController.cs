@@ -165,7 +165,7 @@ public class PlayerController : MonoBehaviour
         if (Light!=null)
         {
             Light2D light2D = Light.GetComponent<Light2D>();
-            if (Input.GetKey(KeyCode.X))
+            if (Input.GetKey(KeyCode.X)  & light2D.pointLightOuterRadius <2)
             {
                 light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, light2D.pointLightOuterRadius + 3, 1f*Time.deltaTime) ;
             }

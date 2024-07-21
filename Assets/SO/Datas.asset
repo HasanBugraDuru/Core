@@ -19,4 +19,5 @@ MonoBehaviour:
   isPaused: 0
   MusicOn: 1
   SoundOn: 1
+  Storypassed: 0
   playerTransform: {fileID: 0}

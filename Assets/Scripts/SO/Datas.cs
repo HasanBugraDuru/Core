@@ -9,7 +9,7 @@ public class Datas : ScriptableObject
     public float MusicValue;
     public float SoundValue;
     public string password;
-    public bool EscOpened,isPaused, MusicOn,SoundOn;
+    public bool EscOpened,isPaused, MusicOn,SoundOn,Storypassed;
 
     public Transform playerTransform;
 }

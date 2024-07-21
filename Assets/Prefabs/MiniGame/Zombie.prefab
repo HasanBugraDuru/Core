@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 2
+  speed: 2.5
   ammo: {fileID: 4367248658331979387, guid: f5774a23f4dbcdc4ca867e17d614e7dc, type: 3}
   heart: {fileID: 1824912966976912135, guid: 3388e7409b36ff74a9d285ea9311f0e9, type: 3}
 --- !u!82 &-1994281671074581431
