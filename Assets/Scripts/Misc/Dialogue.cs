@@ -18,6 +18,7 @@ public class Dialogue : MonoBehaviour
     private int index;
     private void Awake()
     {
+        index = 0;
         dialoguactive = false;
        // Voice = GetComponent<AudioSource>();
     }
@@ -64,6 +65,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+          dialoguactive = false;
           dialoguBox.SetActive(false);
         }
     }

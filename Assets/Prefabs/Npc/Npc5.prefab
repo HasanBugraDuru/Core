@@ -103,7 +103,9 @@ MonoBehaviour:
   lines:
   - It's too bad the sun isn't where it used to be, now there's no light and my ass
     is freezing. Can you help me warm up, handsome thing?
-  textspeed: 0.1
+  - It's too bad the sun isn't where it used to be, now there's no light and my ass
+    is freezing.
+  textspeed: 0.05
   image: {fileID: 0}
   dialoguBox: {fileID: 0}
   dialoguactive: 0

@@ -6,6 +6,8 @@ public class Camara : MonoBehaviour
 {
     [SerializeField]
     Transform player;
+
+    [SerializeField] float extra;
     [SerializeField]
     float minx, maxx, miny, maxy;
 
@@ -17,7 +19,7 @@ public class Camara : MonoBehaviour
     {
         transform.position = new Vector3(
             Mathf.Clamp(player.position.x, minx, maxx),
-            Mathf.Clamp(player.position.y, miny, maxy), transform.position.z);
+            Mathf.Clamp(player.position.y +extra, miny, maxy), transform.position.z);
     }
 
 }

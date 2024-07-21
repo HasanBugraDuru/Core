@@ -100,8 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 0}
-  lines: []
-  textspeed: 0.1
+  lines:
+  - I wish I hadn't voted for that man.
+  - How was I supposed to know it would turn out like this?
+  textspeed: 0.05
   image: {fileID: 0}
   dialoguBox: {fileID: 0}
   dialoguactive: 0

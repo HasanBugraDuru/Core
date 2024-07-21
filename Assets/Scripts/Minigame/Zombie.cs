@@ -56,7 +56,7 @@ public class Zombie : MonoBehaviour
         {
             Instantiate(ammo, transform.position, transform.rotation);
         }
-        else if(randomValue > 0.3f & randomValue < 0.5f)
+        else if(randomValue > 0.2f & randomValue < 0.3f)
         {
             Instantiate(heart, transform.position, transform.rotation);
         }

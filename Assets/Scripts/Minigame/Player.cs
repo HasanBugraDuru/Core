@@ -42,9 +42,9 @@ public class Player : MonoBehaviour
         ammoText.text = ammo.ToString();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        Move();
+        Move();  
         PlayerInput();
         rotate();
     }
@@ -90,6 +90,7 @@ public class Player : MonoBehaviour
             canShoot = true;
             minigamedatas.canSpawn = true;
             other.gameObject.SetActive(false);
+            rb.velocity = Vector2.zero;
         }
         if (other.CompareTag("Heart"))
         {
@@ -115,7 +116,7 @@ public class Player : MonoBehaviour
         if(Health>0)
         {
             Health--;
-            rb.velocity = hit * -50f;
+            rb.velocity = hit * 50f;
             ControlHealth();
         }else if(Health==0) 
         {
