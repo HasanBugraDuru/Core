@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public bool onFloor,pinnOn;
 
     [SerializeField] float velo;
+    [SerializeField] float energy;
     [SerializeField] float JumpPower;
     [SerializeField] Transform floorControlPoint;
     [SerializeField] LayerMask floor;
@@ -166,12 +167,14 @@ public class PlayerController : MonoBehaviour
         if (Light!=null)
         {
             Light2D light2D = Light.GetComponent<Light2D>();
-            if (Input.GetKey(KeyCode.X)  & light2D.pointLightOuterRadius <2)
+            if (Input.GetKey(KeyCode.X) & datas.BatteryAmount > 0 & light2D.pointLightOuterRadius <2)
             {
+                if(datas.BatteryAmount>0) datas.BatteryAmount -= energy;
                 light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, light2D.pointLightOuterRadius + 3, 1f*Time.deltaTime) ;
             }
-            if (Input.GetKey(KeyCode.Z) && light2D.pointLightOuterRadius >0)
+            if (Input.GetKey(KeyCode.Z) & datas.BatteryAmount > 0 & light2D.pointLightOuterRadius >0 )
             {
+                if (datas.BatteryAmount <=1)  datas.BatteryAmount += energy;
                 light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, light2D.pointLightOuterRadius - 3, 1f * Time.deltaTime);
             }
         }

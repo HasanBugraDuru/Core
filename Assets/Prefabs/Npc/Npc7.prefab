@@ -100,8 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 0}
-  lines: []
-  textspeed: 0.1
+  lines:
+  - Do you want to play kick the can with me, Light?
+  - Wait a minute, you can't kick, can you? I'm sorry.
+  textspeed: 0.05
   image: {fileID: 0}
   dialoguBox: {fileID: 0}
   dialoguactive: 0

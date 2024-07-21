@@ -1,0 +1,1020 @@
+fileFormatVersion: 2
+guid: c5dfeae8daa2d0e4ba5560cfc440b196
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 148
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291090af69bd41b4d931450dba01e5f0
+      internalID: 154169910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 148
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326d3c5ec93a2c840b5904d164d737d7
+      internalID: 1733995173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 148
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560465f02ac5deb428530a50e4897945
+      internalID: -2049233361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 148
+        width: 11
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25dbe3c26cf78b4fa604bcf35f1dacd
+      internalID: -734932781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 148
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c77b8017334a047be01c594286af0f
+      internalID: -562625103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 148
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0d99e9c2ac2784ca6b7eecdd5aacd4
+      internalID: -243090217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_6
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 148
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9ffe1dfb0700741a5b57fa387289d1
+      internalID: -118664342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 148
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b654dc60b256c04d9618bc95ed681e3
+      internalID: 111856897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 148
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6abf6693a03f448a190240cafde02a
+      internalID: 530087638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 148
+        width: 11
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50f1a2eff6d43c40ad2e74bea29cced
+      internalID: 715590587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 100
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad263b0fd058204fa04ab2219f2ece0
+      internalID: -1518230504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 100
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9677e325de2f34d44827361966890e38
+      internalID: -821152310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 100
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c4fcfea35b6d642bc700695b645584
+      internalID: 944819800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_13
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 100
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89e6911198b621469efef6c9bb9463b
+      internalID: -1887849462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_14
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 100
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0991d9a64d52d49b48d5dfefc1bebf
+      internalID: 1778176015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_15
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 100
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d4b6caa436f9d4ba0aa66ea51938a8
+      internalID: -2030857939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_16
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 100
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474c69bcbe3f181498288739c574c3de
+      internalID: 924252446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_17
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 100
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa5b8b3991a37743b32e58420d4b332
+      internalID: 2050261919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_18
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 100
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42747bf4994be534e8545c41fdaae64b
+      internalID: 1557785828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 100
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c5c7aa1a1107a4daddff3276f16492
+      internalID: 989430333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_20
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 52
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e94c7e16d3548e4880bdb7ff08609fb
+      internalID: 911217794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_21
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 52
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8e7fde9ff51004886897e23d524d73
+      internalID: 130056735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_22
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 52
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f01279d1c1dd7f489b64eb0630873c5
+      internalID: -1463063405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_23
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 52
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785bd14902ca4254690de6895534c02a
+      internalID: -1619758912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_24
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 52
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73be9c698e4f874384a7d0be49a5b30
+      internalID: 263221998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_25
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 52
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1410bf257ded75040a779d61e0ceff31
+      internalID: -982175932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_26
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 52
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae7db57f351147468bdbcf7d6d76e75
+      internalID: 1083226560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_27
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 52
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb557fb370ed4144c92610c7c03ac29b
+      internalID: 967958395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_28
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 52
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a8380cc9d285b4094fa0677fc095be
+      internalID: -827123512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_29
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 52
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1f0302be35ca14eb9d0de7b0018633
+      internalID: 2106692402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87038979ce7f8e146946a10af7b2c39c
+      internalID: -1887614667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_31
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 4
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6a2fb5121744a4982390d1936b8bdf
+      internalID: -1353093825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_32
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 4
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16d0219b46507c4388e0807a75b71ac
+      internalID: 1481504837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_33
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 4
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145ad6d24a10dbc4e82307f25342f325
+      internalID: -115260118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_34
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 4
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c7997a234663940bfba5fcd4968a47
+      internalID: -1000009640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_35
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 4
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc4f3c8ebb18b44488d40525ca206d0
+      internalID: -1884055068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_36
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 4
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56006766a6bfcb7418a1acfefd7b384b
+      internalID: -1855935447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_37
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 4
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56545f01eea617e49aefbaa0e8d45d40
+      internalID: 1259556268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_38
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 4
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a525d3aab9a14d74cbef78cdfc1a00a3
+      internalID: 601360122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pre-apocalyptic_Idle_anim_39
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 4
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b91df1051f75441a0a5a1c60de8a59
+      internalID: 1631916901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pre-apocalyptic_Idle_anim_0: 154169910
+      pre-apocalyptic_Idle_anim_1: 1733995173
+      pre-apocalyptic_Idle_anim_10: -1518230504
+      pre-apocalyptic_Idle_anim_11: -821152310
+      pre-apocalyptic_Idle_anim_12: 944819800
+      pre-apocalyptic_Idle_anim_13: -1887849462
+      pre-apocalyptic_Idle_anim_14: 1778176015
+      pre-apocalyptic_Idle_anim_15: -2030857939
+      pre-apocalyptic_Idle_anim_16: 924252446
+      pre-apocalyptic_Idle_anim_17: 2050261919
+      pre-apocalyptic_Idle_anim_18: 1557785828
+      pre-apocalyptic_Idle_anim_19: 989430333
+      pre-apocalyptic_Idle_anim_2: -2049233361
+      pre-apocalyptic_Idle_anim_20: 911217794
+      pre-apocalyptic_Idle_anim_21: 130056735
+      pre-apocalyptic_Idle_anim_22: -1463063405
+      pre-apocalyptic_Idle_anim_23: -1619758912
+      pre-apocalyptic_Idle_anim_24: 263221998
+      pre-apocalyptic_Idle_anim_25: -982175932
+      pre-apocalyptic_Idle_anim_26: 1083226560
+      pre-apocalyptic_Idle_anim_27: 967958395
+      pre-apocalyptic_Idle_anim_28: -827123512
+      pre-apocalyptic_Idle_anim_29: 2106692402
+      pre-apocalyptic_Idle_anim_3: -734932781
+      pre-apocalyptic_Idle_anim_30: -1887614667
+      pre-apocalyptic_Idle_anim_31: -1353093825
+      pre-apocalyptic_Idle_anim_32: 1481504837
+      pre-apocalyptic_Idle_anim_33: -115260118
+      pre-apocalyptic_Idle_anim_34: -1000009640
+      pre-apocalyptic_Idle_anim_35: -1884055068
+      pre-apocalyptic_Idle_anim_36: -1855935447
+      pre-apocalyptic_Idle_anim_37: 1259556268
+      pre-apocalyptic_Idle_anim_38: 601360122
+      pre-apocalyptic_Idle_anim_39: 1631916901
+      pre-apocalyptic_Idle_anim_4: -562625103
+      pre-apocalyptic_Idle_anim_5: -243090217
+      pre-apocalyptic_Idle_anim_6: -118664342
+      pre-apocalyptic_Idle_anim_7: 111856897
+      pre-apocalyptic_Idle_anim_8: 530087638
+      pre-apocalyptic_Idle_anim_9: 715590587
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

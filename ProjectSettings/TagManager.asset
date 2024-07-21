@@ -64,6 +64,9 @@ TagManager:
   - name: Misc
     uniqueID: 9210421
     locked: 0
+  - name: Movable
+    uniqueID: 1233849775
+    locked: 0
   - name: Player
     uniqueID: 3432978401
     locked: 0

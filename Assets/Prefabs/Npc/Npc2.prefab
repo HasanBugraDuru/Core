@@ -100,8 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 0}
-  lines: []
-  textspeed: 0.1
+  lines:
+  - Hey man, I was looking for some useful materials and I'm stuck here. I'd be so
+    happy if you helped me get out, dude.
+  textspeed: 0.05
   image: {fileID: 0}
   dialoguBox: {fileID: 0}
   dialoguactive: 0

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Datas : ScriptableObject
 {
+    public float BatteryAmount;
     public float MusicValue;
     public float SoundValue;
     public string password;

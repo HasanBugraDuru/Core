@@ -101,9 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 0}
   lines:
-  - f that old lamp were still working, our lives would be much easier.
+  - 'If that old lamp were still working, our lives would be much easier. '
   - Life without light is very hard. It's the key to everything...
-  textspeed: 0.1
+  textspeed: 0.05
   image: {fileID: 0}
   dialoguBox: {fileID: 0}
   dialoguactive: 0
