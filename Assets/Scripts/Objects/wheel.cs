@@ -19,7 +19,10 @@ public class wheel : MonoBehaviour,Iinteractable
     void Update()
     {
         _turnDir = Input.GetAxis("Horizontal");
-        WheelTurn();
+        if (player != null)
+        {
+            WheelTurn();
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -42,7 +42,7 @@ public class LightControl : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(-90 - (360 - _lightsource.pointLightOuterAngle) / 2);
+        //Debug.Log(-90 - (360 - _lightsource.pointLightOuterAngle) / 2);
     }
     bool IsShining()
     {
