@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     AudioSource sound;
+    BoxCollider2D box;
 
     public bool onFloor,pinnOn;
 
@@ -109,7 +110,7 @@ public class PlayerController : MonoBehaviour
             Sing.SetActive(true);
             SingPanelText.text = "E";
         }
-        if (other.CompareTag("Light"))
+        if (other.CompareTag("Light") && Vector2.Distance(gameObject.transform.position, other.gameObject.transform.position) < 2)
         {
             Light  = other.gameObject;
             Sing.SetActive(true);

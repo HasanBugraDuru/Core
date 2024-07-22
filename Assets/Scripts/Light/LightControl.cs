@@ -12,7 +12,15 @@ public class LightControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _lightsource=GetComponent<Light2D>();
+        if (GetComponent<Light2D>() != null)
+        {
+            _lightsource = GetComponent<Light2D>();
+        }
+        else
+            _lightsource = GetComponentInChildren<Light2D>();
+
+
+
     }
 
     // Update is called once per frame

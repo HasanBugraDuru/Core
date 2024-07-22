@@ -22,10 +22,10 @@ public class Door : MonoBehaviour,IActivatable
     }
     public void TurnOn()
     {
-        rb.transform.position = Vector2.MoveTowards(transform.position, transform.GetChild(1).transform.position, _speed);
+        rb.transform.position = Vector2.MoveTowards(transform.position, transform.parent.GetChild(1).transform.position, _speed);
     }
     public void TurnOff()
     {
-        rb.transform.position = Vector2.MoveTowards(transform.position, transform.GetChild(2).transform.position, _speed);
+        rb.transform.position = Vector2.MoveTowards(transform.position, transform.parent.GetChild(2).transform.position, _speed);
     }
 }
