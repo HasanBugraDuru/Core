@@ -11,7 +11,7 @@ public class PlayButton : MonoBehaviour
     {
         if (datas.Storypassed)
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("PreApocalyptic");
         }
         else
         {
