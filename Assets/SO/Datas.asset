@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Datas
   m_EditorClassIdentifier: 
   Level: 0
-  BatteryAmount: 0.5
+  BatteryAmount: 0.25
   MusicValue: 0
   SoundValue: 0
-  password: 5547
+  password: 3130
   EscOpened: 0
   isPaused: 0
   MusicOn: 0
