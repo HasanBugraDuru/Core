@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Pinn"))
+        if (other.CompareTag("Pinn")||other.CompareTag("Door" ))
         {
             pinnOn = true;
             Sing.SetActive(true);

@@ -32,11 +32,11 @@ public class LightControl : MonoBehaviour
         Vector3 dir = collision.transform.position - transform.position;
         dir = transform.InverseTransformDirection(dir);
         angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        Debug.Log(angle+collision.name);
+      //  Debug.Log(angle+collision.name);
 
         RC = Physics2D.Raycast(transform.position, collision.transform.position - transform.position);
             Debug.DrawLine(transform.position, RC.point);
-            Debug.Log(RC.collider.name + "hit by light raycast");
+           // Debug.Log(RC.collider.name + "hit by light raycast");
 
             if (RC.collider.GetComponent<ILightAble>() != null&&IsShining()==true     )
         { 
