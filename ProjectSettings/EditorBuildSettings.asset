@@ -24,11 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Story.unity
     guid: 18977833489d6a742a2e18a45b208d9c
   - enabled: 1
-    path: Assets/Scenes/Chase.unity
-    guid: 4049a52276fd9914abe771158a4f97c5
-  - enabled: 1
     path: Assets/Scenes/PreApocalyptic.unity
     guid: c54fc6c8101ff2d40b60086bbc745f75
+  - enabled: 1
+    path: Assets/Scenes/Chase1.unity
+    guid: 4049a52276fd9914abe771158a4f97c5
+  - enabled: 1
+    path: Assets/Scenes/Chase2.unity
+    guid: c318191b0dac3bd4ea446cbba337794f
   - enabled: 1
     path: Assets/Scenes/Rescue.unity
     guid: 92853a85e1ef71441b25471dd32d3b6a

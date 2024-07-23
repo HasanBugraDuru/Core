@@ -6,6 +6,8 @@ public class PlayerInteract : MonoBehaviour
 {
    [SerializeField] GameObject interactableObject;
    [SerializeField] PlayerController controller;
+    wheel wheel;
+    public bool isinteracting;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,7 +15,13 @@ public class PlayerInteract : MonoBehaviour
         {
             interactableObject = collision.gameObject;
             Debug.Log("interactable object is" + interactableObject.name);
+
         }
+        if (collision.GetComponent<wheel>() != null)
+        {
+            wheel = collision.GetComponent<wheel>();
+        }
+
     }
     private void Start()
     {
@@ -33,7 +41,10 @@ public class PlayerInteract : MonoBehaviour
         {
             interactableObject.GetComponent<Iinteractable>().Interact();
         }
-        
+        if (wheel != null)
+        {
+            isinteracting = wheel._isInteracting;
+        }
     }
 
 }

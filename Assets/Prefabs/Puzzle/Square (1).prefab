@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8362308217607643237}
   - component: {fileID: 4137883209112666212}
   - component: {fileID: 7111475755400338430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,10 +99,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -185,7 +185,7 @@ MonoBehaviour:
   - {x: 0.14339256, y: -0.14551258, z: 0}
   m_ShapePathHash: -1182690155
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1392
+  m_InstanceId: 100416
   m_LocalBounds:
     m_Center: {x: 0.0002632141, y: -0.00024604797, z: 0}
     m_Extent: {x: 0.14447594, y: 0.14526653, z: 0}

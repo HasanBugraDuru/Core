@@ -3,41 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-public class LightSwitch : MonoBehaviour,IActivatable
+public class TurnGreen : MonoBehaviour,IActivatable
 {
     Light2D light2D;
-    LightControl lightc;
+    LightControl light;
     // Start is called before the first frame update
     void Start()
     {
-        light2D = GetComponent<Light2D>();
-        lightc = GetComponent<LightControl>();
+        light2D = GetComponentInChildren<Light2D>();
+        light = GetComponent<LightControl>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void TurnOn()
     {
         if (light2D != null)
         {
-            light2D.enabled = true;
+            light2D.color = Color.green;
             
 
-        }
-        if(lightc != null)
-        {
-            lightc.enabled = true;
         }
     }
     public void TurnOff()
     {
-        light2D.enabled = false;
-        if (lightc != null)
-        {
-            lightc.enabled = false;
-        }
+        light2D.color = Color.red;
+        
     }
 }
