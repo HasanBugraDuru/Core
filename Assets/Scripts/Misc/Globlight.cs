@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Globlight : MonoBehaviour
 {
+    [SerializeField] Datas datas;
     [SerializeField] float value,time;
 
     Light2D globlight;
@@ -17,6 +18,7 @@ public class Globlight : MonoBehaviour
     {
         if (globlight.intensity <=time)
         {
+            datas.Level = 2;
             SceneManager.LoadScene("PostApocalyptic");
         }
         globlight.intensity -= value * Time.deltaTime;

@@ -172,7 +172,7 @@ public class PlayerController : MonoBehaviour
                 if(datas.BatteryAmount>0) datas.BatteryAmount -= energy;
                 light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, light2D.pointLightOuterRadius + 3, 1f*Time.deltaTime) ;
             }
-            if (Input.GetKey(KeyCode.Z) & datas.BatteryAmount > 0 & light2D.pointLightOuterRadius >0 )
+            if (Input.GetKey(KeyCode.Z) & light2D.pointLightOuterRadius >0 )
             {
                 if (datas.BatteryAmount <=1)  datas.BatteryAmount += energy;
                 light2D.pointLightOuterRadius = Mathf.Lerp(light2D.pointLightOuterRadius, light2D.pointLightOuterRadius - 3, 1f * Time.deltaTime);

@@ -56,7 +56,7 @@ public class Story : MonoBehaviour
         }
         else
         {
-            datas.Storypassed = true;
+            datas.Level = 1;
             SceneManager.LoadScene("PreApocalyptic");
         }
     }

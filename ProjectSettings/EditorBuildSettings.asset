@@ -32,4 +32,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PostApocalyptic.unity
     guid: 7ec1eec32b38b6a429d9d304318c7d07
+  - enabled: 1
+    path: Assets/Scenes/Puzzel.unity
+    guid: 9a3a37b31db64074abfe6f1b98c28c2f
+  - enabled: 1
+    path: Assets/Scenes/funeral.unity
+    guid: 4e18ae480ef553c4083b1a27dc494ac1
+  - enabled: 1
+    path: Assets/Scenes/Arcade.unity
+    guid: 304f14b96c520ef4b80e704a0a05da93
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 8e0e39313293114448ebb11bf7919b18
   m_configObjects: {}
