@@ -17,10 +17,6 @@ public class Door : MonoBehaviour,IActivatable
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void TurnOn()
     {
         rb.transform.position = Vector2.MoveTowards(transform.position, transform.parent.GetChild(1).transform.position, _speed);

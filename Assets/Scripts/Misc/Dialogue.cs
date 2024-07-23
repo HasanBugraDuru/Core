@@ -44,7 +44,6 @@ public class Dialogue : MonoBehaviour
         dialoguBox.SetActive(true);
         textComponent.text = string.Empty;
         image.sprite= gameObject.GetComponent<SpriteRenderer>().sprite;
-        index = 0;
         StartCoroutine(Typeline());
     }
     IEnumerator Typeline()
