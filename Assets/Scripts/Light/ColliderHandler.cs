@@ -22,6 +22,9 @@ public class ColliderHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _circlecollider.radius = _lightsource.pointLightOuterRadius;
+        if (_lightsource.pointLightOuterRadius > 0.5)
+            _circlecollider.radius = _lightsource.pointLightOuterRadius;
+        else
+            _circlecollider.radius = 0.5f;
     }
 }
