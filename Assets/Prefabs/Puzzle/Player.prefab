@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5720672903418164669}
   - component: {fileID: 4083436409188746649}
   - component: {fileID: 1161173852865796363}
+  - component: {fileID: 2311508906929835115}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -140,6 +141,7 @@ MonoBehaviour:
     m_Bits: 64
   PinnPanel: {fileID: 0}
   datas: {fileID: 11400000, guid: 5ba3ce7fde979e84db0beb7d20e7ac86, type: 2}
+  interact: {fileID: 0}
   Sing: {fileID: 0}
   SingPanelText: {fileID: 0}
   canMove: 0
@@ -210,6 +212,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2311508906929835115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2209807775767131095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c428c22b56b5fc5418463d38ed68dfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableObject: {fileID: 0}
+  controller: {fileID: 0}
+  isinteracting: 0
 --- !u!1 &3231359727591235934
 GameObject:
   m_ObjectHideFlags: 0

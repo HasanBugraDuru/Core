@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask floor;
     [SerializeField] GameObject PinnPanel;
     [SerializeField] Datas datas;
+    [SerializeField] PlayerInteract interact;
+
 
     [SerializeField] GameObject Sing;
     [SerializeField] TextMeshProUGUI SingPanelText;
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         canMove = true;
         ArcadeBox = false;
+        interact = GetComponent<PlayerInteract>();
     }
     private void Update()
     {
@@ -109,7 +112,16 @@ public class PlayerController : MonoBehaviour
             pinnOn = true;
             Sing.SetActive(true);
             SingPanelText.text = "E";
-        }  if (other.CompareTag("Door"))
+        }
+        if (interact.isinteracting)
+        {
+            Sing.SetActive(true);
+            SingPanelText.text = "<- ->";
+
+        }
+
+
+        if (other.CompareTag("Door"))
         {
             
             Sing.SetActive(true);
@@ -141,6 +153,12 @@ public class PlayerController : MonoBehaviour
         {
             pinnOn = false;
             Sing.SetActive(false);
+        }
+        if (interact.isinteracting)
+        {
+            Sing.SetActive(true);
+            
+
         }
         if (other.CompareTag("Door"))
         {
