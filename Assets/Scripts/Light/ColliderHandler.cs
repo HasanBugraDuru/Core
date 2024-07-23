@@ -9,8 +9,14 @@ public class ColliderHandler : MonoBehaviour
     public CircleCollider2D _circlecollider;
     void Start()
     {
-        _lightsource = GetComponent<Light2D>();
-       _circlecollider = GetComponent<CircleCollider2D>();
+        if (GetComponent<Light2D>() != null)
+        {
+            _lightsource = GetComponent<Light2D>();
+        }
+        else
+            _lightsource = GetComponentInChildren<Light2D>();
+
+        _circlecollider = GetComponent<CircleCollider2D>();
     }
 
     // Update is called once per frame
