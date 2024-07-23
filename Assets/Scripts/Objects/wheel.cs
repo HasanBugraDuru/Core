@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class wheel : MonoBehaviour,Iinteractable
 {
-    PlayerController player;
+    public PlayerController player;
     public GameObject[] gameObjects;
     // Start is called before the first frame update
     public bool _isInteracting;
@@ -55,6 +55,7 @@ public class wheel : MonoBehaviour,Iinteractable
                     gameObject.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, curRot + rotAmount));
                 }
             }
+            Debug.Log("Wheel");
             if (_turnDir > 0)
             {
                 Debug.Log("turning left");
