@@ -104,9 +104,14 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Pinn")||other.CompareTag("Door" ))
+        if (other.CompareTag("Pinn"))
         {
             pinnOn = true;
+            Sing.SetActive(true);
+            SingPanelText.text = "E";
+        }  if (other.CompareTag("Door"))
+        {
+            
             Sing.SetActive(true);
             SingPanelText.text = "E";
         }
@@ -135,6 +140,11 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Pinn"))
         {
             pinnOn = false;
+            Sing.SetActive(false);
+        }
+        if (other.CompareTag("Door"))
+        {
+           
             Sing.SetActive(false);
         }
         if (other.CompareTag("Light"))
