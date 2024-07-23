@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Datas
   m_EditorClassIdentifier: 
   Level: 0
-  BatteryAmount: 0.035000034
+  BatteryAmount: 0.5
   MusicValue: 0
   SoundValue: 0
-  password: 3169
+  password: 5547
   EscOpened: 0
   isPaused: 0
-  MusicOn: 1
+  MusicOn: 0
   SoundOn: 1
-  Storypassed: 0
   playerTransform: {fileID: 0}
