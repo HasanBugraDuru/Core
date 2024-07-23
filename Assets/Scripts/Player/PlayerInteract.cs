@@ -6,6 +6,7 @@ public class PlayerInteract : MonoBehaviour
 {
    [SerializeField] GameObject interactableObject;
    [SerializeField] PlayerController controller;
+   [SerializeField] wheel wheel;
    
     
     
@@ -16,6 +17,9 @@ public class PlayerInteract : MonoBehaviour
             interactableObject = collision.gameObject;
             Debug.Log("interactable object is" + interactableObject.name);
 
+        }
+        if (collision.GetComponent<wheel>()!=null){
+            wheel = collision.GetComponent<wheel>();
         }
         
 
@@ -38,7 +42,7 @@ public class PlayerInteract : MonoBehaviour
         {
             interactableObject.GetComponent<Iinteractable>().Interact();
         }
-      
+        controller.isInteracting = wheel._isInteracting;
     }
 
 }

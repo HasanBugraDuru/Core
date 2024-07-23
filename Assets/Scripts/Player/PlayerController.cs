@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject Sing;
     [SerializeField] TextMeshProUGUI SingPanelText;
 
-    public bool canMove,ArcadeBox;
+    public bool canMove,ArcadeBox,isInteracting;
 
     private GameObject Light;
     private GameObject Npc;
@@ -113,7 +113,12 @@ public class PlayerController : MonoBehaviour
             Sing.SetActive(true);
             SingPanelText.text = "E";
         }
-       
+        if (isInteracting)
+        {
+
+            Sing.SetActive(true);
+            SingPanelText.text = "< >";
+        }
 
 
         if (other.CompareTag("Door"))
@@ -149,7 +154,12 @@ public class PlayerController : MonoBehaviour
             pinnOn = false;
             Sing.SetActive(false);
         }
-       
+        if (!isInteracting)
+        {
+            Sing.SetActive(false);
+            
+        }
+
         if (other.CompareTag("Door"))
         {
            
