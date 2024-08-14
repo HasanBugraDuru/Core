@@ -19,6 +19,6 @@ MonoBehaviour:
   password: 8360
   EscOpened: 0
   isPaused: 0
-  MusicOn: 0
+  MusicOn: 1
   SoundOn: 1
   playerTransform: {fileID: 0}
